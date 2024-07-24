@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Hshere Housing" />
+    <meta name="description" content="Hsphere Housing" />
+    <meta name="author" content="" />
+
+    <!-- Title  -->
+    <title>Hsphere Housing</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+
+        .navbar img{
+            width: 130px;
+        }
+
+        .product-superiority-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            /* Ensure there is enough space for the bullets */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            /* Adjust this value as needed */
+        }
+
+        .custom-icon {
+            width: 62px;
+            /* Adjust icon size */
+            height: 64px;
+            /* Adjust icon size */
+        }
+
+        .item-bx {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .custom-font {
+            font-family: 'Arial', sans-serif;
+            /* Example font, adjust as needed */
+        }
+
+        .numb {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .more {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .more:hover {
+            text-decoration: underline;
+        }
+
+        /* General styles for the intro section */
+        .intro-section {
+            padding: 60px 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content-container {
+            padding-left: 20px;
+        }
+
+        .content-container h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content-container p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content-container h3,
+        .content-container h4 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-container ul {
+            padding-left: 20px;
+        }
+
+        .content-container ul li {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Styles for services section */
+        .services {
+            padding: 60px 0;
+        }
+
+        .bg-gray {
+            background-color: #f5f5f5;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .section-head {
+            margin-bottom: 40px;
+        }
+
+        .section-head .row {
+            margin-bottom: 20px;
+        }
+
+        .item-bx {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .image-container {
+            margin-bottom: 15px;
+        }
+
+        .custom-icon {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h6 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .btn_apply_now {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn_apply_now:hover {
+            background-color: #555;
+        }
+
+        .checks-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .inner-div {
+            width: 13vw;
+            height: 10vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .inner-div-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .product-superiority {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .product-superiority img {
+            width: 13vw;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .background-section {
+            position: relative;
+            width: 100%;
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10vw 0;
+        }
+
+        .background-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .background-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .heading {
+            color: white;
+            font-size: 5vw;
+            margin: 0;
+        }
+
+        .description {
+            color: white;
+            font-size: 2vw;
+            margin: 1rem 0;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-text {
+            color: white;
+            font-size: 20px;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 1200px) {
+            .heading {
+                font-size: 6vw;
+            }
+
+            .description {
+                font-size: 2.5vw;
+            }
+
+            .icon-text {
+                font-size: 1.5vw;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .heading {
+                font-size: 7vw;
+            }
+
+            .description {
+                font-size: 3vw;
+            }
+
+            .icon-text {
+                font-size: 2vw;
+            }
+
+            .icon-container {
+                gap: 1.5rem;
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 767px) {
+            .content-container {
+                padding-left: 0;
+            }
+
+            #checks {
+                flex-direction: column;
+                gap: 50px;
+                align-items: center;
+            }
+
+            .checks-container {
+                flex-direction: column;
+                gap: 150px;
+                align-items: center;
+            }
+
+            .inner-div {
+                width: 30vh;
+                height: 20vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .product-superiority {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .product-superiority .inner-div1 {
+                width: 100%;
+            }
+
+            .product-superiority img {
+                width: 20vh;
+            }
+
+            .heading {
+                font-size: 8vw;
+            }
+
+            .description {
+                font-size: 3.5vw;
+            }
+
+            .icon-text {
+                font-size: 2.5vw;
+            }
+
+            .icon-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .heading {
+                font-size: 9vw;
+            }
+
+            .description {
+                font-size: 4vw;
+            }
+
+            .icon-text {
+                font-size: 4vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- ==================== Start Loading ==================== -->
+
+    <div id="preloader">
+        <div class="loading-text">Loading</div>
+    </div>
+
+    <!-- ==================== End Loading ==================== -->
+
+
+    <!-- ==================== Start progress-scroll-button ==================== -->
+
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- ==================== End progress-scroll-button ==================== -->
+
+
+    <!-- ==================== Start cursor ==================== -->
+
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- ==================== End cursor ==================== -->
+
+
+    <!-- ==================== Start Navbar ==================== -->
+
+    <div class="navbar">
+        <img src="img/spherehousing.jpg" alt="HSphere Housing Logo" class="logo">
+        <nav>
+            <ul>
+                               
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about.html">ABOUT US</a></li>
+                <li><a href="#services"> OUR PROJECTS</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">PROFILE</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="leadership.html">Leadership</a>
+                    </div>
+                </li>
+                <li><a href="#our-work"> BUILD ASSIST</a></li>
+                <li><a href="/contact.html"> CONTACT US</a></li>
+               
+            </ul>
+        </nav>
+       
+    </div>
+
+    <!-- ==================== End Navbar ==================== -->
+
+
+
+
+    <!-- ==================== Start Header ==================== -->
+
+    <header class="pages-header bg-img valign parallaxie" data-background="img/1.jpg" data-overlay-dark="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cont text-center">
+                        <h1>About us</h1>
+                        <div class="path">
+                            <a href="index.html">Home</a><span>/</span><a href="about.html" class="active">About</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== End Header ==================== -->
+
+    <!-- ==================== Start about ==================== -->
+
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="exp-img wow fadeInUp" data-wow-delay=".3s">
+                        <div class="img bg-img wow imago" data-background="img/exp.jpg">
+                            <div class="since custom-font">
+                                <span>Since</span>
+                                <span>1999</span>
+                            </div>
+                            <div class="years custom-font">
+                                <h2>21</h2>
+                                <h5>Years Experience</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 valign">
+                    <div class="exp-content wow fadeInUp" data-wow-delay=".3s">
+                        <h6 class="sub-title">About Us</h6>
+                        <h2 class="mb-20 playfont">Unleashing Happiness: <br> Chennai’s Most Promising & Aspiring Real
+                            Estate Developer.</h2>
+                        <p>Headquartered and having majority of our projects in and around Chennai, Sphere Housing is a
+                            distinguished symbol of trust and quality. More than just developing projects, our purpose
+                            is to enhance lives by keeping our projects most cost efficient and affordable without any
+                            compromises on superior quality. Our dedication towards making a difference and creating
+                            wealth to our customers means every property we develop has exceptional value and precision.
+                            We never compromise on quality and always pay attention to every detail, establishing
+                            ourselves as a promising name in the real estate sector.
+                        </p>
+                        <div class="numbers mt-50">
+                            <p>At Sphere Housing, our values and commitment to our clients are deep-rooted. We’re very
+                                proud of our track record of successful residential projects and tailor-made plots that
+                                cater to individual client needs. Our ambition is to redefine real estate pricing and
+                                excellence, ensuring a promising future for our respected customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= start product superiority ========================= -->
+
+    <section style="background-color: #D6D6D6; margin: 40px 0; height: fit-content;">
+        <div class="container">
+            <div class="row">
+                <div class="section-head text-center" style="background-color: #D6D6D6; padding: 20px;">
+                    <div class="playfont wow flipInX product-superiority">
+                        <div id="inner-div1">
+                            <img src="img/product superiority.png" class="product-superiority-img"
+                                alt="product superiority">
+                        </div>
+                        <div id="inner-div2">
+                            <p style="color: black;">In line with our philosophy of creating superior living spaces our
+                                plotted development projects are always chosen in select prime locations for quick
+                                appreciation, creating wealth to our customers. </p>
+                        </div>
+                    </div>
+                    <div id="checks" class="checks-container">
+                        <div class="inner-div">
+                            <img src="img/clearTitleAndDocs.png" class="inner-div-img" alt="Clear Title And Docs">
+                            <p>Clear Title & Documentation</p>
+                        </div>
+                        <div class="inner-div">
+                            <img src="img/multi-level-checks.png" class="inner-div-img" alt="Multi-level Checks">
+                            <p>Multi-level Checks</p>
+                        </div>
+                        <div class="inner-div">
+                            <img src="img/prime-locations.png" class="inner-div-img" alt="Prime Locations">
+                            <p>Prime Locations</p>
+                        </div>
+                        <div class="inner-div">
+                            <img src="img/max-value-for-money.png" class="inner-div-img" alt="Maximum Value for Money">
+                            <p>Maximum Value for Money</p>
+                        </div>
+                        <div class="inner-div">
+                            <img src="img/customer-centric.png" class="inner-div-img" alt="Customer Centric Approach">
+                            <p>Customer Centric Approach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= end product superiority ========================= -->
+
+
+    <!-- ======================= start vision section ========================= -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="section-head text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 col-sm-12">
+                            <h2 class="playfont wow flipInX" data-wow-delay=".5s">VISION</h2>
+                            <p style="padding: 40px 0;" class="playfont wow flipInX" data-wow-delay=".5s">Our aspiration
+                                is to position ourselves as the foremost provider of real estate solutions within our
+                                market. We aim to deliver an unparalleled calibre of service and expertise to our
+                                esteemed clients and partners. We are committed to giving back to our customers who have
+                                trusted us with their hard-earned money by offering exceptional properties that enhance
+                                their lifestyle. Our pursuit of creating value extends to all stakeholders, including
+                                our valued clients, committed employees, and the vibrant community we are a part of. As
+                                a responsible organization, we wholeheartedly devote ourselves to nurturing enduring
+                                relationships built on the pillars of trust and mutual prosperity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= end vision section ========================= -->
+
+    <!-- ======================= start mission section ========================= -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="section-head text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 col-sm-12">
+                            <h2 class="playfont wow flipInX" data-wow-delay=".5s">MISSION</h2>
+                            <p style="padding: 40px 0;" class="playfont wow flipInX" data-wow-delay=".5s">At Sphere
+                                Housing, our goal is to deliver a real estate experience that is truly unmatched. We are
+                                committed to providing personalized solutions that meet the unique needs of each
+                                consumer. Our aspiration is to become the most unique and promising brand in real
+                                estate, delivering meaningful products to every customer who invests with us. Beyond
+                                being just another real estate organization, we strive to be a partner and advisor,
+                                offering expert guidance and incomparable service at every stage of the real estate
+                                process. We believe in giving back to the societies we serve and are devoted to using
+                                our resources and expertise to make a positive impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= end mission section ========================= -->
+
+
+    <!-- ======================= start purpose section ========================= -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="section-head text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 col-sm-12">
+                            <h2 class="playfont wow flipInX" data-wow-delay=".5s">PURPOSE</h2>
+                            <p style="padding: 40px 0;" class="playfont wow flipInX" data-wow-delay=".5s">At Sphere
+                                Housing, we are driven by our commitment to providing high-quality real estate services
+                                that serve society with good quality projects at very competitive prices. We strive to
+                                be the premier choice and delight our customers at every step. Whether our clients are
+                                buying or selling a property, we are dedicated to building long-term relationships and
+                                helping them achieve their real estate goals. We are also committed to offering the best
+                                career growth, remuneration, and benefits to employees and creating long-lasting
+                                relationships with every stakeholder associated with us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= end purpose section ========================= -->
+
+
+    <!-- start customer centric section -->
+
+    <section>
+        <div class="background-section">
+            <div class="background-image" style="background-image: url('img/buildings-background.jpg');"></div>
+            <div class="background-overlay"></div>
+            <div class="content">
+                <h2 class="heading">WE ARE A CUSTOMER CENTRIC ORGANIZATION</h2>
+                <p class="description">We aim to be the chosen choice for our consumers and strive to bring innovation
+                    in our projects. Our promise on Value for money and Cost efficiency are a few more reasons to buy
+                    with us.</p>
+                <div class="icon-container">
+                    <div class="icon-item">
+                        <svg fill="#B3781B" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 494.285 494.286" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M477.469,175.201l0.149-0.088L408.312,54.311l1.496-0.32c6.263-1.353,10.73-6.895,10.73-13.301v-6.174 c0-8.663-7.997-15.123-16.47-13.294L84.47,90.154c-6.263,1.353-10.73,6.895-10.73,13.301v6.174c0,8.412,7.541,14.674,15.729,13.369 L16.66,249.913l0.149,0.089H0c0,43.159,45.451,78.146,101.517,78.146s101.518-34.986,101.518-78.146h-14.416l0.149-0.089 l-75.684-131.926l117.055-25.249v350.887c-56.841,4.393-70.604,29.75-70.604,29.75h175.563c0,0-13.818-25.466-70.958-29.784V85.407 l105.95-22.854l-64.565,112.56l0.149,0.088h-14.423c0,43.16,45.451,78.146,101.518,78.146c56.065,0,101.517-34.986,101.517-78.146 H477.469z M40.127,250.001l62.58-109.092l62.581,109.092H40.127z M328.984,175.201l62.58-109.099l62.587,109.099H328.984z"></path> </g> </g></svg>
+                        <p class="icon-text">Integrity and fairness</p>
+                    </div>
+                    <div class="icon-item">
+                        <svg width="40px" height="40px" viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#b3781b" stroke="#b3781b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:#b3781b;}</style></defs><title>handshake</title><path class="cls-1" d="M64,12.78v17s-3.63.71-4.38.81-3.08.85-4.78-.78C52.22,27.25,42.93,18,42.93,18a3.54,3.54,0,0,0-4.18-.21c-2.36,1.24-5.87,3.07-7.33,3.78a3.37,3.37,0,0,1-5.06-2.64,3.44,3.44,0,0,1,2.1-3c3.33-2,10.36-6,13.29-7.52,1.78-1,3.06-1,5.51,1C50.27,12,53,14.27,53,14.27a2.75,2.75,0,0,0,2.26.43C58.63,14,64,12.78,64,12.78ZM27,41.5a3,3,0,0,0-3.55-4.09,3.07,3.07,0,0,0-.64-3,3.13,3.13,0,0,0-3-.75,3.07,3.07,0,0,0-.65-3,3.38,3.38,0,0,0-4.72.13c-1.38,1.32-2.27,3.72-1,5.14s2.64.55,3.72.3c-.3,1.07-1.2,2.07-.09,3.47s2.64.55,3.72.3c-.3,1.07-1.16,2.16-.1,3.46s2.84.61,4,.25c-.45,1.15-1.41,2.39-.18,3.79s4.08.75,5.47-.58a3.32,3.32,0,0,0,.3-4.68A3.18,3.18,0,0,0,27,41.5Zm25.35-8.82L41.62,22a3.53,3.53,0,0,0-3.77-.68c-1.5.66-3.43,1.56-4.89,2.24a8.15,8.15,0,0,1-3.29,1.1,5.59,5.59,0,0,1-3-10.34C29,12.73,34.09,10,34.09,10a6.46,6.46,0,0,0-5-2C25.67,8,18.51,12.7,18.51,12.7a5.61,5.61,0,0,1-4.93.13L8,10.89v19.4s1.59.46,3,1a6.33,6.33,0,0,1,1.56-2.47,6.17,6.17,0,0,1,8.48-.06,5.4,5.4,0,0,1,1.34,2.37,5.49,5.49,0,0,1,2.29,1.4A5.4,5.4,0,0,1,26,34.94a5.47,5.47,0,0,1,3.71,4,5.38,5.38,0,0,1,2.39,1.43,5.65,5.65,0,0,1,1.48,4.89,0,0,0,0,1,0,0s.8.9,1.29,1.39a2.46,2.46,0,0,0,3.48-3.48s2,2.48,4.28,1c2-1.4,1.69-3.06.74-4a3.19,3.19,0,0,0,4.77.13,2.45,2.45,0,0,0,.13-3.3s1.33,1.81,4,.12c1.89-1.6,1-3.43,0-4.39Z"></path></g></svg>
+                        <p class="icon-text">Mutual Respect</p>
+                    </div>
+                    <div class="icon-item">
+                        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="40px" height="40px" fill="#b3781b" stroke="#b3781b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#b3781b;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st1{fill:none;stroke:#b3781b;stroke-width:3.2;stroke-linejoin:round;stroke-miterlimit:10;} </style> <path class="st0" d="M3,26l2.6-4.2c1.5-2.3,4-3.8,6.8-3.8H19v0c0,2.2-1.8,4-4,4h-2"></path> <path class="st0" d="M15,22h8l1.2-1.6c1.1-1.5,2.9-2.4,4.8-2.4h0l-2.7,4.8c-1.4,2.6-4.2,4.2-7.1,4.2h0c-4.7,0-9.3,1.4-13.2,4l0,0"></path> <path class="st0" d="M17,22c5.7-2.6,10-6.9,10-17.7c-1,0.3-2,0.5-3.1,0.5c-2.6,0-5.1-1.1-6.9-2.8c-1.9,1.8-4.3,2.8-6.9,2.8 C9,4.8,8,4.6,7,4.3c0,6.7,1.7,10.9,4.3,13.8"></path> </g></svg>
+                        <p class="icon-text">Transperancy and Trustworthiness</p>
+                    </div>
+                    <div class="icon-item">
+                        <svg fill="#b3781b" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="40px" height="40px" stroke="#b3781b" stroke-width="7.68"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <circle cx="219.328" cy="61.668" r="15.219"></circle> </g> </g> <g> <g> <rect x="95.632" y="164.668" width="247.393" height="30.417"></rect> </g> </g> <g> <g> <rect x="95.632" y="215.364" width="247.393" height="30.417"></rect> </g> </g> <g> <g> <rect x="95.632" y="405.552" width="123.696" height="30.417"></rect> </g> </g> <g> <g> <polygon points="424.907,310.842 379.509,356.24 363.213,339.944 341.705,361.453 379.509,399.255 446.414,332.35 "></polygon> </g> </g> <g> <g> <path d="M409.269,275.099V76.162h-66.242V47.395h-62.963C273.252,20.201,248.606,0,219.33,0s-53.923,20.201-60.734,47.395H95.634 v28.767H29.391V512h379.878v-76.028h73.34V275.099H409.269z M126.051,77.812h61.094V62.604c0-17.747,14.438-32.186,32.185-32.186 c17.747,0,32.185,14.439,32.185,32.186v15.209h61.094v27.117H126.051V77.812z M378.852,481.583H59.808V106.579h35.825v28.768 h247.393v-28.768h35.825v168.52h-73.34v160.873h73.34V481.583z M452.192,405.554h-42.923h-73.34V305.515h73.34h42.923V405.554z"></path> </g> </g> </g></svg>
+                        <p class="icon-text">Commitment to all stakeholders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end customer centric section -->
+
+
+
+    <!-- ==================== Start Section ==================== -->
+    <section>
+        <div class="container">
+            <div class="section-head text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <h2 class="playfont wow flipInX" data-wow-delay=".5s">Buy your plot with H Sphere and build your
+                            dream home the way you want.</h2>
+                        <p class="playfont wow flipInX" data-wow-delay=".5s">Make your dream home come true with the
+                            assistance of 60+ top brands that will take care of your house plan until your housewarming
+                            plan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row bord-box wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-4 col-md-6 item-bx">
+                    <div class="image-container">
+                        <img src="img/b5.webp" alt="Clear title and Documentation" class="custom-icon">
+                    </div>
+                    <h6 class="mb-20">Clear title and Documentation</h6>
+                </div>
+                <div class="col-lg-4 col-md-6 item-bx">
+                    <div class="image-container">
+                        <img src="img/b1.webp" alt="Multi-Level Checks" class="custom-icon">
+                    </div>
+                    <h6 class="mb-20">Multi-Level Checks</h6>
+                </div>
+                <div class="col-lg-4 col-md-6 item-bx">
+                    <div class="image-container">
+                        <img src="img/b6.webp" alt="Prime Locations" class="custom-icon">
+                    </div>
+                    <h6 class="mb-20">Prime Locations</h6>
+                </div>
+                <div class="col-lg-4 col-md-6 item-bx">
+                    <div class="image-container">
+                        <img src="img/b7.webp" alt="Maximum Value For Money" class="custom-icon">
+                    </div>
+                    <h6 class="mb-20">Maximum Value For Money</h6>
+                </div>
+                <div class="col-lg-4 col-md-6 item-bx">
+                    <div class="image-container">
+                        <img src="img/b9.webp" alt="Customer Centric Approach" class="custom-icon">
+                    </div>
+                    <h6 class="mb-20">Customer Centric Approach</h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ==================== End Section ==================== -->
+
+    <!-- ==================== End about ==================== -->
+
+
+
+    <!-- ==================== Start Footer ==================== -->
+
+    <footer class="main-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="item abot">
+                        <div class="logo-footer mb-20">
+                            <a href="#0" class="logo">
+                                <img src="img/logo-light.png" alt="">
+                            </a>
+                        </div>
+                        <p>Our team takes over everything, from an idea and concept development to realization.</p>
+                        <div class="social-icon">
+                            <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#0"><i class="fab fa-twitter"></i></a>
+                            <a href="#0"><i class="fab fa-instagram"></i></a>
+                            <a href="#0"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="item usful-links">
+                        <div class="fothead">
+                            <h6>Useful Links</h6>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="about.html">About us</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="mission.html">Mission and Vison</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="testimonials.html">Testimonials</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="item fotcont">
+                        <div class="fothead">
+                            <h6>Contact</h6>
+                        </div>
+                        <p>+91-9594157564</p>
+                        <p>contact@hsphere.com</p>
+                        <p>sales@hsphere.com</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="item fotcont">
+                        <div class="fothead">
+                            <h6>Useful links</h6>
+                        </div>
+                        <li> <a href="portfolio.html">Projects</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="leadeship.html">Leadership</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="item fotcont">
+                        <div class="fothead">
+                            <h6>Visit</h6>
+                        </div>
+                        <p>No 2/33 , 2nd Floor, 3rd Street, pathmavathi nagar, Chrompet, Chennai - 600044.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="text-left">
+                            <p>© 2024, Hsphere <a href="https://hspherehousing.com">Powered by Freshtronics</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-right">
+                            <p>All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-daa3abd4-1967-4b69-be85-6969570e48e7" data-elfsight-app-lazy></div>
+    <!-- ==================== End Footer ==================== -->
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- plugins -->
+    <script src="js/plugins.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Map -->
+    <script src="js/map.js"></script>
+
+    <!-- google map api -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUU5FZiF5WLFFfgIC1n64Zr0zfpQZjBBg&amp;callback=initMap">
+        </script>
+    <a href="https://wa.me/919594157564" title="Chat with us on WhatsApp" style="margin: 0 0 20px 0 !important;
+height: 52px; min-width: 52px; padding: 10px 0px 0px 10px; position: fixed !important; bottom: 10px; right: 20px; z-index: 999999999 !important; background-color: #00E785;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4); border-radius: 100px">
+        <svg width="34" height="34" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1024_354)">
+                <path
+                    d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939ZM14.0583 25.4169H14.0538C11.988 25.417 9.96008 24.8617 8.1825 23.8091L7.7611 23.5593L3.3945 24.704L4.56014 20.448L4.28546 20.0117C2.92594 17.8454 2.32491 15.2886 2.57684 12.7434C2.82877 10.1982 3.91938 7.80894 5.67722 5.95113C7.43506 4.09332 9.76045 2.87235 12.2878 2.48017C14.8152 2.08799 17.4013 2.54684 19.6395 3.78457C21.8776 5.02231 23.641 6.96875 24.6524 9.3179C25.6638 11.6671 25.8659 14.2857 25.2268 16.7622C24.5877 19.2387 23.1438 21.4326 21.122 22.999C19.1001 24.5655 16.6151 25.4156 14.0575 25.4157L14.0583 25.4169Z"
+                    fill="#E0E0E0"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z"
+                    fill="white"></path>
+                <path
+                    d="M23.7628 4.02445C21.4107 1.66917 18.2825 0.249336 14.9611 0.0294866C11.6397 -0.190363 8.35161 0.804769 5.70953 2.82947C3.06745 4.85417 1.25154 7.77034 0.600156 11.0346C-0.051233 14.299 0.506321 17.6888 2.16894 20.5724L0.222656 27.6808L7.49566 25.7737C9.50727 26.8692 11.7613 27.4432 14.0519 27.4434H14.0577C16.7711 27.4436 19.4235 26.6392 21.6798 25.1321C23.936 23.6249 25.6947 21.4825 26.7335 18.9759C27.7722 16.4693 28.0444 13.711 27.5157 11.0497C26.9869 8.38835 25.6809 5.94358 23.7628 4.02445ZM14.0577 25.1269H14.0547C12.0125 25.1271 10.0078 24.5782 8.25054 23.5377L7.8339 23.2907L3.51686 24.4222L4.66906 20.2143L4.39774 19.7831C3.05387 17.6415 2.4598 15.1141 2.70892 12.598C2.95804 10.082 4.03622 7.72013 5.77398 5.88366C7.51173 4.04719 9.81051 2.84028 12.3089 2.45266C14.8074 2.06505 17.3638 2.5187 19.5763 3.74232C21.7888 4.96593 23.5319 6.89011 24.5317 9.21238C25.5314 11.5346 25.7311 14.1233 25.0993 16.5714C24.4675 19.0195 23.0401 21.1883 21.0414 22.7367C19.0427 24.2851 16.5861 25.1254 14.0577 25.1255V25.1269Z"
+                    fill="white"></path>
+            </g>
+            <defs>
+                <clipPath id="clip0_1024_354">
+                    <rect width="27.8748" height="28" fill="white" transform="translate(0.0625)"></rect>
+                </clipPath>
+            </defs>
+        </svg>
+    </a>
+</body>
+
+</html>
