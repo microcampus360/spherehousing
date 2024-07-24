@@ -66,30 +66,41 @@
 
 
     <!-- ==================== Start Navbar ==================== -->
+<!-- ==================== Start Navbar ==================== -->
 
-    <div class="navbar">
-        <img src="img/spherehousing.jpg" alt="HSphere Housing Logo" class="logo">
-        <nav>
-            <ul>
-                               
-                <li><a href="/">HOME</a></li>
-                <li><a href="/about.html">ABOUT US</a></li>
-                <li><a href="#services"> OUR PROJECTS</a></li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">PROFILE</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="leadership.html">Leadership</a>
-                    </div>
-                </li>
-                <li><a href="#our-work"> BUILD ASSIST</a></li>
-                <li><a href="/contact.html"> CONTACT US</a></li>
-               
-            </ul>
-        </nav>
-       
-    </div>
-    <!-- ==================== End Navbar ==================== -->
+<div class="navbar">
+    <img src="img/spherehousing.jpg" alt="Sphere Housing Logo" class="logo">
+    <button class="navbar-toggler" id="navbar-toggler">
+        <svg width="44px" height="44px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </svg>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="#services">OUR PROJECTS</a></li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">PROFILE</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="leadership.html">Leadership</a>
+                </div>
+            </li>
+            <li><a href="#our-work">BUILD ASSIST</a></li>
+            <li><a href="/contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- ==================== End Navbar ==================== -->
 
   
 
@@ -263,6 +274,13 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+
+    <!-- Navbar Dropdown -->
+    <script>
+        document.getElementById('navbar-toggler').addEventListener('click', function () {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
 
     <!-- Map -->
     <script src="js/map.js"></script>

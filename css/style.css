@@ -1289,6 +1289,117 @@ nav ul li a:hover {
   border-bottom: 2px solid #004b8d;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus, :active{
+  background-color: white;
+  border: none;
+}
+
+.navbar-toggler svg {
+  width: 24px;
+  height: 24px;
+  text-align: end;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: black;
+}
+
+/* Dropdown styling */
+.nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar img{
+  object-fit: contain;
+}
+
+/* .dropdown-menu .dropdown-item:hover {
+  background-color: black;
+} */
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar-toggler {
+      display: block;
+      background-color: F7F7F7;
+      border: none;
+  }
+
+  #navbar {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+  }
+
+  #navbar ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  #navbar ul li {
+      margin: 10px 0;
+  }
+
+  #navbar ul li a {
+      width: 100%;
+      padding: 10px;
+      display: block;
+  }
+
+  .navbar.active #navbar {
+      display: flex;
+  }
+
+  .navbar:active{
+      border: none;
+      background-color: #F7F7F7;
+  }
+}
+
 
 /* ====================== [ End navbar ] ====================== */
 /* ====================== [ Start Slider ] ====================== */
