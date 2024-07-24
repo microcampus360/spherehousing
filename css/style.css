@@ -1340,6 +1340,7 @@ nav ul li a:hover {
   position: absolute;
   background-color: white;
   z-index: 1;
+  border: 2px solid black; 
 }
 
 .nav-item:hover .dropdown-menu {
@@ -1363,7 +1364,8 @@ nav ul li a:hover {
 /* Responsive styling */
 @media (max-width: 768px) {
   .navbar-toggler {
-      display: block;
+      display: flex;
+      justify-content: flex-end;
       background-color: F7F7F7;
       border: none;
   }
@@ -1397,6 +1399,12 @@ nav ul li a:hover {
   .navbar:active{
       border: none;
       background-color: #F7F7F7;
+  }
+
+  .top-sub-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
   }
 }
 
