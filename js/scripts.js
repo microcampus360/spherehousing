@@ -90,7 +90,7 @@ $(function () {
     var swiperWorkMetro = new Swiper('.metro .swiper-container', {
         slidesPerView: 2,
         spaceBetween: 0,
-        speed: 1000,
+        speed: 1200,
         loop: true,
         centeredSlides: true,
 

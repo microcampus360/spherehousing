@@ -37,58 +37,52 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
-            /* Adjust this value as needed */
+            margin-bottom: 30px; /* Adjust this value as needed */
         }
-
         .custom-icon {
-            width: 62px;
-            /* Adjust icon size */
-            height: 64px;
-            /* Adjust icon size */
+            width: 62px;  /* Adjust icon size */
+            height: 64px; /* Adjust icon size */
         }
-
         .item-bx {
             padding: 20px;
             border: 1px solid #ddd;
             margin-bottom: 20px;
             text-align: center;
         }
-
         .custom-font {
-            font-family: 'Arial', sans-serif;
-            /* Example font, adjust as needed */
+            font-family: 'Arial', sans-serif; /* Example font, adjust as needed */
         }
-
         .numb {
             font-size: 2em;
             color: #333;
         }
-
         .mb-20 {
             margin-bottom: 20px;
         }
-
         .more {
             text-decoration: none;
             color: #000000;
         }
-
         .more:hover {
             text-decoration: underline;
         }
     </style>
     <style>
-        .services {
-            padding: 60px 0;
-            background-color: #f7f7f7;
-            /* Background color for the section */
+
+        .services-box{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:4%;
         }
 
+        
+        .services {
+            padding: 60px 0;
+            background-color: #f7f7f7; /* Background color for the section */
+        }
         .section-head {
             margin-bottom: 40px;
         }
-
         .bord-box {
             background-size: cover;
             background-position: center;
@@ -96,94 +90,84 @@
             padding: 5%;
             position: relative;
         }
-
         .item-bx {
             padding: 20px;
             border: 1px solid #ddd;
             margin-bottom: 20px;
             text-align: center;
         }
-
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
         }
-
         .custom-icon {
-            width: 50px;
-            /* Adjust icon size as needed */
-            height: 50px;
-            /* Adjust icon size as needed */
+            width: 50px;  /* Adjust icon size as needed */
+            height: 50px; /* Adjust icon size as needed */
         }
-
         .custom-font {
-            font-family: 'Arial', sans-serif;
-            /* Example font, adjust as needed */
+            font-family: 'Arial', sans-serif; /* Example font, adjust as needed */
         }
-
         .mb-20 {
             margin-bottom: 20px;
         }
-
         .more {
             text-decoration: none;
             color: #007bff;
         }
-
         .more:hover {
             text-decoration: underline;
         }
 
-        .yellow-bt {
+        .yellow-bt{
             background-color: rgb(219, 219, 0);
-            padding: 3% 2% 3% 2%;
-
-
+            padding:3% 2% 3% 2%;
+            
+            
         }
 
         #disclaimer {
-            position: fixed;
-            display: flex;
-            padding: 3%;
-            gap: 10%;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f5e4c7;
+    position: fixed;
+    display: flex;
+    padding:3%;
+    gap:10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5e4c7;
+   
+    color: black;
+    z-index: 1000;
+    overflow: hidden;
+    transition: top 1s ease;
+}
 
-            color: black;
-            z-index: 1000;
-            overflow: hidden;
-            transition: top 1s ease;
-        }
+.disclaimer-content {
+    padding: 20px;
+}
 
-        .disclaimer-content {
-            padding: 20px;
-        }
+.disclaimer-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
 
-        .disclaimer-content p {
-            margin: 0;
-            font-size: 14px;
-            line-height: 1.5;
-        }
+.disclaimer-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-        .disclaimer-content button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+.disclaimer-content button:hover {
+    background-color: #333;
+}
 
-        .disclaimer-content button:hover {
-            background-color: #333;
-        }
-
-        .disclaimer-text {
-            /* writing-mode: vertical-rl;
+.disclaimer-text {
+    /* writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: 14px;
     font-weight: bold;
@@ -191,9 +175,27 @@
     background-color: #f5e4c7;
     display: flex;
     align-items: center; */
+}
+
+
+     
+
+
+@media only screen and (max-width:720px){
+
+    .services-box{
+            display: grid;
+            grid-template-columns: auto ;
+            gap:4%;
+        }
+        #agreeBtn{
+            width:70%;
         }
 
         
+
+     
+}
     </style>
 
 </head>
@@ -263,10 +265,8 @@
     <!-- ==================== Start Navbar ==================== -->
 
     <div class="top-bar">
-        <div class="top-sub-bar">
-            <a href="mailto:info@hspherehousing.com">info@hspherehousing.com</a>
-            <span>(+91) 97870 34567</span>
-        </div>
+        <a href="mailto:info@hspherehousing.com">info@hspherehousing.com</a>
+        <span style="text-align:start;width:100%;">(+91) 97870 34567</span>
 
         <div style="display: flex;gap:3%;" class="social-icons">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -314,7 +314,7 @@
     <!-- ==================== Start Slider ==================== -->
 
     <header class="slider">
-        <div class="swiper-container parallax-slider">
+        <div  class="swiper-container parallax-slider" >
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="bg-img valign"
@@ -348,7 +348,7 @@
                                     <div class="caption hmone">
 
                                         <h1 data-splitting><a href="#0">
-                                                Experience the power of transparency with us.
+                                                Experience <br>the power of transparency with us.
                                             </a></h1>
                                         <p class="mt-10">Tailor your dream home with our custom residential projects,
                                             villas, and plots. <br> the perfect blend of luxury and personalization.</p>
@@ -420,7 +420,7 @@
                     <i class="fas fa-chevron-left"></i>
                 </div>
             </div>
-            <div class="swiper-pagination top custom-font"></div>
+            <div  class=" top custom-font swiper-pagination"></div>
         </div>
     </header>
 
@@ -501,8 +501,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row bord-box bg-img wow fadeInUp"
-                style="display: grid;grid-template-columns: auto auto auto;gap:4%;" data-wow-delay=".3s"
+            <div class="row bord-box bg-img wow fadeInUp services-box"
+                 data-wow-delay=".3s"
                 data-background="img/slid/2.jpg">
 
                 <div class=" item-bx">
