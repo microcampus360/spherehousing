@@ -53,14 +53,17 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
-  list-style: none; }
+  list-style: none; 
+  font-family: 'Playfair Display', serif; 
+}
 
 body {
   color: #191514;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif; }
+  /* font-family: 'Poppins', sans-serif;  */
+}
 
 img {
   width: 100%;
@@ -132,7 +135,8 @@ a, span {
   font-weight: 400; }
 
 .playfont {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif; 
+}
 
 .main-color {
   color: #b19777 !important; }
@@ -1351,10 +1355,10 @@ nav ul li a:hover {
   color: white;
 }
 
-.navbar .logo{
+/* .navbar .logo{
   width:400%;
   height:400%;
-}
+} */
 
 /* .dropdown-menu .dropdown-item:hover {
   background-color: black;
