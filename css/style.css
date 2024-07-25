@@ -1297,9 +1297,7 @@ nav ul li a:hover {
   padding: 10px 20px;
 }
 
-.logo {
-  height: 70px;
-}
+
 
 .navbar-toggler {
   display: none;
@@ -1353,8 +1351,9 @@ nav ul li a:hover {
   color: white;
 }
 
-.navbar img{
-  object-fit: contain;
+.navbar .logo{
+  width:400%;
+  height:400%;
 }
 
 /* .dropdown-menu .dropdown-item:hover {
@@ -1406,6 +1405,19 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 3px;
   }
+
+  @media only screen and (max-width:720px){
+
+   
+
+        .navbar .logo{
+            width:90px;
+        }
+
+       
+
+     
+}
 }
 
 
@@ -3483,6 +3495,8 @@ button:hover {
 
  } */
 
+ 
+
  .circle{
   padding:5%;
   border-radius: 50%;
@@ -3613,9 +3627,9 @@ button:hover {
       padding: 10px 15px; }
     .navbar .nav-link {
       margin: 10px auto !important; }
-  .navbar .logo {
+  /* .navbar .logo {
     margin-left: 15px;
-    width: 50px; }
+    width: 50px; } */
   .nav-scroll .navbar-collapse .nav-link,
   .light .navbar-collapse .nav-link {
     color: #fff !important; }
@@ -3794,7 +3808,8 @@ button:hover {
     right: 15px;
     bottom: 15px; }
   .navbar .logo {
-    width: 60px; }
+    width: 120px; 
+  }
   .btn-curve {
     padding: 8px 15px; }
     .btn-curve span {
