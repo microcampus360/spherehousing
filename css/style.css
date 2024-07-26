@@ -1355,74 +1355,66 @@ nav ul li a:hover {
   color: white;
 }
 
-/* .navbar .logo{
-  width:400%;
-  height:400%;
-} */
-
-/* .dropdown-menu .dropdown-item:hover {
-  background-color: black;
-} */
-
 /* Responsive styling */
 @media (max-width: 768px) {
   .navbar-toggler {
-      display: flex;
-      justify-content: flex-end;
-      background-color: F7F7F7;
-      border: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F7F7F7;
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    background-color: #F7F7F7; 
+  }
+
+  .navbar-toggler:active {
+    border: none;
+    outline: none;
+    background-color: #F7F7F7; 
   }
 
   #navbar {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
 
   #navbar ul {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   #navbar ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   #navbar ul li a {
-      width: 100%;
-      padding: 10px;
-      display: block;
+    width: 100%;
+    padding: 10px;
+    display: block;
   }
 
   .navbar.active #navbar {
-      display: flex;
+    display: flex;
   }
 
-  .navbar:active{
-      border: none;
-      background-color: #F7F7F7;
+  .navbar:active {
+    border: none;
+    background-color: #F7F7F7;
   }
 
-  .top-sub-bar{
+  .top-sub-bar {
     display: flex;
     flex-direction: column;
     gap: 3px;
   }
-
-  @media only screen and (max-width:720px){
-
-   
-
-        .navbar .logo{
-            width:90px;
-        }
-
-       
-
-     
 }
-}
+
 
 
 /* ====================== [ End navbar ] ====================== */
@@ -3518,65 +3510,127 @@ button:hover {
 /* ====================== [ End contact ] ====================== */
 /* ====================== [ Start Footer ] ====================== */
 .main-footer {
-  padding: 100px 0 0; }
-  .main-footer.dark {
-    background: #252531;
-    color: #fff; }
-  .main-footer .abot p {
-    font-size: 13px; }
-  .main-footer .abot .social-icon {
-    margin-top: 20px; }
-    .main-footer .abot .social-icon a {
-      width: 45px;
-      height: 45px;
-      line-height: 45px;
-      text-align: center;
-      font-size: 13px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      margin-right: 3px;
-      -webkit-transition: all .4s;
-      -o-transition: all .4s;
-      transition: all .4s; }
-      .main-footer .abot .social-icon a:hover {
-        border-color: #b19777;
-        color: #b19777; }
-  .main-footer .usful-links ul {
-    margin: 0; }
-    .main-footer .usful-links ul li {
-      font-size: 13px;
-      margin-bottom: 10px; }
-      .main-footer .usful-links ul li:hover {
-        color: #b19777; }
-      .main-footer .usful-links ul li i {
-        font-size: 10px;
-        color: #b19777;
-        margin-right: 5px; }
-  .main-footer .fothead h6 {
-    color: #b19777;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 30px; }
-  .main-footer .fotcont .fothead h6 {
-    position: relative;
-    padding-bottom: 10px; }
-    .main-footer .fotcont .fothead h6:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      height: 1px; }
-  .main-footer .fotcont p {
-    font-size: 13px; }
-  .main-footer .sub-footer {
-    padding: 30px 0;
-    margin-top: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.02); }
-    .main-footer .sub-footer p {
-      font-size: 13px; }
+  padding: 100px 0 0;
+  background-color: #252531;
+}
+
+.main-footer .container {
+  background-color: #252531;
+}
+
+.main-footer.dark {
+  background: #252531;
+  color: #fff;
+}
+
+.main-footer .abot p {
+  font-size: 13px;
+}
+
+.main-footer .abot .social-icon {
+  margin-top: 20px;
+}
+
+.main-footer .abot .social-icon a {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 3px;
+  transition: all 0.4s;
+  background-color: #252531;
+  color: #fff;
+}
+
+.main-footer .abot .social-icon a:hover,
+.main-footer .abot .social-icon a:focus,
+.main-footer .abot .social-icon a:active {
+  border-color: #b19777;
+  color: #b19777;
+  background-color: #252531;
+}
+
+.main-footer .usful-links ul {
+  margin: 0;
+}
+
+.main-footer .usful-links ul li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.main-footer .usful-links ul li:hover,
+.main-footer .usful-links ul li:focus,
+.main-footer .usful-links ul li:active {
+  color: #b19777;
+  background-color: #252531;
+}
+
+.main-footer .usful-links ul li i {
+  font-size: 10px;
+  color: #b19777;
+  margin-right: 5px;
+}
+
+.main-footer .fothead h6 {
+  color: #b19777;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.main-footer .fotcont .fothead h6 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.main-footer .fotcont .fothead h6:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  height: 1px;
+}
+
+.main-footer .fotcont p {
+  font-size: 13px;
+}
+
+.main-footer .sub-footer {
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.main-footer .sub-footer p {
+  font-size: 13px;
+}
+
+.main-footer a, .main-footer button {
+  background-color: #252531;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.main-footer a:focus, .main-footer a:active, .main-footer button:focus, .main-footer button:active {
+  background-color: #252531;
+  color: #fff;
+  outline: none;
+}
+
+.main-footer .container * {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+
 
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
