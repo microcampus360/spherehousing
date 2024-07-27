@@ -277,7 +277,7 @@
                 display: flex;
                 flex-direction: row;
                 width: 80%;
-                max-width: 600px;
+                max-width: 700px;
                 height: 80%;
                 max-height: 500px;
             }
@@ -320,16 +320,6 @@
 
         }
     </style>
-    <style>
-
-
-
-
-
-
-
-    </style>
-
 </head>
 
 <body>
@@ -377,10 +367,15 @@
         <div id="preloader">
             <div class="loading-text">Loading</div>
         </div>
+        <div id="preloader">
+            <div class="loading-text">Loading</div>
+        </div>
 
+        <!-- ==================== End Loading ==================== -->
         <!-- ==================== End Loading ==================== -->
 
 
+        <!-- ==================== Start progress-scroll-button ==================== -->
         <!-- ==================== Start progress-scroll-button ==================== -->
 
         <div class="progress-wrap cursor-pointer">
@@ -388,73 +383,73 @@
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg>
         </div>
+        <div class="progress-wrap cursor-pointer">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
 
+        <!-- ==================== End progress-scroll-button ==================== -->
         <!-- ==================== End progress-scroll-button ==================== -->
 
 
         <!-- ==================== Start cursor ==================== -->
+        <!-- ==================== Start cursor ==================== -->
 
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
         <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div>
 
         <!-- ==================== End cursor ==================== -->
+        <!-- ==================== End cursor ==================== -->
 
 
         <!-- ==================== Start Navbar ==================== -->
-        <div class="top-bar">
-            <a href="mailto:info@hspherehousing.com">info@spherehousing.com</a>
-            <span class="phone" style="text-align:start;width:100%;">(+91) 97870 34567</span>
 
-            <div style="display: flex;gap:3%;" class="social-icons">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="navbar">
-            <a href="/index.html" class="logo">
-                <img src="img/spherehousing.jpg" alt="Sphere Housing Logo" class="logo">
-            </a>
-            <button class="navbar-toggler" id="navbar-toggler">
-                <svg width="44px" height="44px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                    </g>
-                </svg>
-                <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                            aria-expanded="false">WHY CHOOSE US</a>
-                        <div style="z-index:10;" class="dropdown-menu">
-                            <a class="dropdown-item" href="about.html">ABOUT US</a>
-                            <a class="dropdown-item" href="customer.html">CUSTOMER CENTRIC INITIATIVES</a>
-                        </div>
-                    </li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                            aria-expanded="false">PROFILE</a>
-                        <div style="z-index:10;" class="dropdown-menu">
-                            <a class="dropdown-item" href="leadership.html">LEADERSHIP</a>
-                            <a class="dropdown-item" href="leadership.html#our-team">OUR TEAM</a>
-                        </div>
-                    </li>
-                    <li><a href="/build.html">BUILD ASSIST</a></li>
-                    <li><a href="/contact.html">CONTACT US</a></li>
-                </ul>
-            </nav>
-        </div>
-
+    
+    <div class="navbar">
+        <a href="/index.html" class="logo">
+            <img src="img/spherehousing.jpg" alt="Sphere Housing Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" id="navbar-toggler">
+            <svg width="44px" height="44px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </svg>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a  class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">WHY CHOOSE US</a>
+                    <div style="z-index:10;" class="dropdown-menu">
+                        <a  class="dropdown-item" href="about.html">ABOUT US</a>
+                        <a   class="dropdown-item" href="customer.html">CUSTOMER CENTRIC INITIATIVES</a>
+                    </div>
+                </li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">PROFILE</a>
+                    <div style="z-index:10;" class="dropdown-menu">
+                        <a class="dropdown-item" href="leadership.html">LEADERSHIP</a>
+                        <a class="dropdown-item" href="leadership.html#our-team">OUR TEAM</a>
+                    </div>
+                </li>
+                <li><a href="/build.html">BUILD ASSIST</a></li>
+                <li><a href="/contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
 
         <!-- ==================== End Navbar ==================== -->
 
