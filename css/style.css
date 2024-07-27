@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #888;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 2;
   margin: 0; }
@@ -1091,6 +1091,14 @@ a, span {
     letter-spacing: 4px;
     margin-bottom: 10px; }
 
+.sub-section{
+  display: flex;
+}
+
+/* .sub-section div img{
+  width: ;
+} */
+
 .sub-title {
   color: #b19777;
   font-family: 'Teko', sans-serif;
@@ -1227,7 +1235,7 @@ a, span {
 
 
 .phone{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: italic;
 }
 
 .top-bar .social-icons a{
@@ -1251,8 +1259,12 @@ a, span {
   }
 
   .section-head p{
-    margin-bottom: 40px;
-    font-size: 60%;
+    /* margin-bottom: 40px; */
+    font-size: 10px;
+  }
+
+  .section-padding{
+    padding: 40px 0;
   }
 
 }
@@ -1298,8 +1310,8 @@ header {
 }
 
 .section-head p{
-  margin-bottom: 40px;
-  font-size: 120%;
+  /* margin-bottom: 40px; */
+  font-size: 18px;
 }
 
 .navbar {
@@ -1871,42 +1883,41 @@ height:85vh;}
 
 /* ====================== [ End Slider ] ====================== */
 /* ====================== [ Start Intro ] ====================== */
-.about {
+.container {
   position: relative; }
-  .about .exp-img .img {
+  .container .exp-img .img {
     width: 90%;
     height: 500px;
     position: relative;
     z-index: 2; }
-    .about .exp-img .img:after {
+    .container .exp-img .img:after {
       content: '';
       position: absolute;
       top: 40px;
       left: 40px;
       right: 40px;
       bottom: 40px;
-      background: rgba(255, 255, 255, 0.95);
       z-index: -1; }
-    .about .exp-img .img .since {
+    .container .exp-img .img .since {
       position: absolute;
       right: 70px;
       top: 70px; }
-      .about .exp-img .img .since span {
+      .container .exp-img .img .since span {
         display: block;
         color: #b19777;
         font-size: 22px;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1; }
-        .about .exp-img .img .since span:first-of-type {
+        .contianer .exp-img .img .since span:first-of-type {
           font-size: 16px;
           font-weight: 600;
           letter-spacing: 2px; }
-    .about .exp-img .img .years {
+    .container .exp-img .img .years {
       position: absolute;
       left: 70px;
       bottom: 70px; }
-      .about .exp-img .img .years h2 {
+      .container .exp-img .img .years h2 {
         font-size: 140px;
         font-weight: 800;
         background: url(../img/exp.jpg) no-repeat;
@@ -1914,14 +1925,14 @@ height:85vh;}
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         line-height: 1; }
-      .about .exp-img .img .years h5 {
+      .container .exp-img .img .years h5 {
         color: #b19777;
         letter-spacing: 5px;
         font-size: 20px; }
-  .about .exp-content {
+  .container .exp-content {
     position: relative;
     z-index: 2; }
-    .about .exp-content:after {
+    .container .exp-content:after {
       content: '';
       width: 200px;
       height: 250px;
@@ -1930,34 +1941,34 @@ height:85vh;}
       right: -40px;
       border: 10px solid #fafafa;
       z-index: -1; }
-    .about .exp-content.nopat:after {
+    .container .exp-content.nopat:after {
       display: none; }
-    .about .exp-content ul {
+    .container .exp-content ul {
       margin: 30px 0 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .about .exp-content ul li {
+      .container .exp-content ul li {
         font-size: 10px;
         font-weight: 500;
         letter-spacing: 4px;
         text-transform: uppercase; }
-        .about .exp-content ul li:after {
+        .container .exp-content ul li:after {
           content: '/';
           position: relative;
           margin: 0 15px;
           color: #777; }
-        .about .exp-content ul li:last-of-type:after {
+        .container .exp-content ul li:last-of-type:after {
           display: none; }
-  .about .ab-exp .pattern {
+  .container .ab-exp .pattern {
     height: 100%;
     width: 100%; }
-  .about .ab-exp .years-exp {
+  .container .ab-exp .years-exp {
     position: relative;
     height: 100%;
     width: 100%;
     border: 10px solid #f8f4f3; }
-    .about .ab-exp .years-exp .exp-text {
+    .container .ab-exp .years-exp .exp-text {
       position: absolute;
       bottom: 40px;
       left: -10px;
@@ -1966,13 +1977,13 @@ height:85vh;}
       width: -moz-max-content;
       width: max-content;
       background: #fff; }
-      .about .ab-exp .years-exp .exp-text h2 {
+      .container .ab-exp .years-exp .exp-text h2 {
         font-size: 70px;
         line-height: 1;
         display: inline-block;
         position: relative;
         z-index: 2; }
-        .about .ab-exp .years-exp .exp-text h2:after {
+        .container .ab-exp .years-exp .exp-text h2:after {
           content: '';
           width: 40px;
           height: 40px;
@@ -1982,11 +1993,11 @@ height:85vh;}
           right: -15px;
           top: -15px;
           z-index: -1; }
-      .about .ab-exp .years-exp .exp-text h6 {
+      .container .ab-exp .years-exp .exp-text h6 {
         font-size: 14px; }
-  .about .specialty ul {
+  .container .specialty ul {
     margin: 0; }
-    .about .specialty ul li {
+    .container .specialty ul li {
       width: -webkit-max-content;
       width: -moz-max-content;
       width: max-content;
@@ -1997,21 +2008,21 @@ height:85vh;}
       padding: 0 0 15px;
       border-bottom: 1px solid #f1f1f1;
       margin-bottom: 30px; }
-      .about .specialty ul li span {
+      .container .specialty ul li span {
         font-size: 14px;
         font-weight: 300;
         color: #999;
         margin-right: 30px; }
-      .about .specialty ul li:last-of-type {
+      .container .specialty ul li:last-of-type {
         margin-bottom: 0; }
-  .about .pat {
+  .container .pat {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 40%;
     z-index: 2; }
-    .about .pat:after {
+    .container .pat:after {
       content: '';
       position: absolute;
       top: 0;
@@ -3803,14 +3814,21 @@ button:hover {
     font-size: 40px; }
   .cta__slider-item .media-wrapper .bg-img {
     width: 100%; }
-  .about .specialty,
-  .about .exp-content,
+  .container .specialty,
+  .container .exp-content,
   .numbers .item,
   .team .slick-slider,
-  .about .ab-exp,
-  .about .txt-cont,
+  .container .ab-exp,
+  .container .txt-cont,
   .skills-sec .content {
     margin-top: 50px; }
+    .container .exp-content{
+      text-align: center;
+    }
+    .numbers{
+      text-align: center;
+      padding: 0 20px;
+    }
   .services .feat-top {
     width: 100%;
     margin-top: 0;
@@ -3851,7 +3869,7 @@ button:hover {
         background: #b19777; }
   .team .team-container {
     width: 100%; }
-  .about .pat {
+  .container .pat {
     display: none; }
   .cont-map {
     background: #f8f4f3; }
@@ -3984,16 +4002,19 @@ button:hover {
     top: auto;
     left: 15px;
     bottom: 15px; }
-  .about .exp-content:after {
+    .container .exp-content{
+      text-align: center;
+    }
+  .contianer .exp-content:after {
     right: 0; }
-  .about .exp-img .img {
+  .container .exp-img .img {
     width: 100%; }
-  .about .exp-content ul {
+  .container .exp-content ul {
     display: block; }
-  .about .exp-content ul li {
+  .container .exp-content ul li {
     margin-top: 10px;
     display: inline-block; }
-  .about .ab-exp .years-exp {
+  .container .ab-exp .years-exp {
     height: 300px;
     margin-top: 10px; }
   .services .feat-top {
