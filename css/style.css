@@ -1225,12 +1225,53 @@ a, span {
 /* ====================== [ End Button Style ] ====================== */
 /* ====================== [ Start navbar ] ====================== */
 
+
+.phone{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar .social-icons a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border : 1px solid white;
+   width:30px;
+   height:30px;
+   border-radius: 50%;
+   transition: 0.3s ease-in-out;
+   
+}
+
+@media only screen and (max-width:720px){
+  
+  .top-bar .social-icons a{
+    border : none;
+    width:13px;
+    height:13px;
+  }
+
+  .section-head p{
+    margin-bottom: 40px;
+    font-size: 60%;
+  }
+
+}
+
+.top-bar .social-icons a:hover {
+   border: 1px solid #9C866D;
+}
+
+.foot-usful-link{
+   font-weight :lighter
+}
 .social-icons {
   display: flex;
   width:50%;
   justify-content: end;
   align-items: center;
 }
+
+
 
 .social-icons a {
   margin: 0 5px;
@@ -1254,6 +1295,11 @@ header {
   padding: 10px;
   gap:5%;
   font-size: 14px;
+}
+
+.section-head p{
+  margin-bottom: 40px;
+  font-size: 120%;
 }
 
 .navbar {
@@ -1426,7 +1472,8 @@ nav ul li a:hover {
 /* ====================== [ End navbar ] ====================== */
 /* ====================== [ Start Slider ] ====================== */
 .slider {
-  position: relative; }
+  position: relative; 
+height:85vh;}
   .slider.fixed-slider {
     position: fixed;
     top: 0;
@@ -1440,7 +1487,8 @@ nav ul li a:hover {
       position: relative;
       overflow: hidden;
       width: 100%;
-      min-height: 100vh;
+      height:85vh;
+      /* min-height: 80vh; */
       padding-bottom: 50px; }
       .slider .parallax-slider .swiper-slide .bg-img {
         position: absolute;
@@ -3517,15 +3565,15 @@ button:hover {
 /* ====================== [ Start Footer ] ====================== */
 .main-footer {
   padding: 100px 0 0;
-  background-color: #252531;
+  background-color: #004b8d;
 }
 
 .main-footer .container {
-  background-color: #252531;
+  background-color: #004b8d;
 }
 
 .main-footer.dark {
-  background: #252531;
+  background-color: #004b8d;
   color: #fff;
 }
 
@@ -3588,6 +3636,10 @@ button:hover {
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
+.main-footer .fotcont{
+  font-weight: 200;
+  font-size: 300;
+}
 
 .main-footer .fotcont .fothead h6 {
   position: relative;
@@ -3605,7 +3657,7 @@ button:hover {
 }
 
 .main-footer .fotcont p {
-  font-size: 13px;
+  
 }
 
 .main-footer .sub-footer {
