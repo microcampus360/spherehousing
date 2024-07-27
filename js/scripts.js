@@ -51,7 +51,7 @@ $(function () {
 
     var parallaxSlider;
     var parallaxSliderOptions = {
-        speed: 1200,
+        speed: 1600,
         autoplay: true,
         parallax: true,
         loop: true,
