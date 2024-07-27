@@ -154,9 +154,9 @@
             background-color: #f5f5f5;
         }
 
-        .section-padding {
+        /* .section-padding {
             padding: 60px 0;
-        }
+        } */
 
         .section-head {
             margin-bottom: 40px;
@@ -205,13 +205,12 @@
         }
 
         .inner-div {
-            width: 13vw;
-            height: 10vw;
+            width: 15vw;
             display: flex;
-            align-items: center;
             flex-direction: column;
-            gap: 3px;
-            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 10px;
             background-color: white;
             color: black;
             border-radius: 20px;
@@ -298,6 +297,10 @@
             margin-top: 0.5rem;
         }
 
+        body{
+            font-family: serif;
+        }
+
         @media (max-width: 1200px) {
             .heading {
                 font-size: 6vw;
@@ -362,10 +365,6 @@
 
             .inner-div {
                 width: 30vh;
-                height: 20vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .product-superiority {
@@ -510,7 +509,7 @@
 
     <!-- ==================== Start Header ==================== -->
 
-    <header class="pages-header bg-img valign parallaxie" data-background="img/1.jpg" data-overlay-dark="5">
+    <header class="pages-header bg-img valign parallaxie" data-background="img/about/about-background.webp" data-overlay-dark="5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -534,15 +533,15 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="exp-img wow fadeInUp" data-wow-delay=".3s">
-                        <div class="img bg-img wow imago" data-background="img/exp.jpg">
-                            <div class="since custom-font">
+                        <div class="img bg-img " data-background="img/about/aspirations.webp">
+                            <!-- <div class="since custom-font">
                                 <span>Since</span>
                                 <span>1999</span>
                             </div>
                             <div class="years custom-font">
                                 <h2>21</h2>
                                 <h5>Years Experience</h5>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -559,14 +558,14 @@
                             We never compromise on quality and always pay attention to every detail, establishing
                             ourselves as a promising name in the real estate sector.
                         </p>
-                        <div class="numbers mt-50">
-                            <p>At Sphere Housing, our values and commitment to our clients are deep-rooted. We’re very
-                                proud of our track record of successful residential projects and tailor-made plots that
-                                cater to individual client needs. Our ambition is to redefine real estate pricing and
-                                excellence, ensuring a promising future for our respected customers.
-                            </p>
-                        </div>
                     </div>
+                </div>
+                <div class="numbers mt-50">
+                    <p>At Sphere Housing, our values and commitment to our clients are deep-rooted. We’re very
+                        proud of our track record of successful residential projects and tailor-made plots that
+                        cater to individual client needs. Our ambition is to redefine real estate pricing and
+                        excellence, ensuring a promising future for our respected customers.
+                    </p>
                 </div>
             </div>
         </div>
@@ -580,7 +579,7 @@
                 <div class="section-head text-center" style="background-color: #D6D6D6; padding: 20px;">
                     <div class="playfont wow flipInX product-superiority">
                         <div id="inner-div1">
-                            <img src="img/product superiority.png" class="product-superiority-img"
+                            <img src="img/about/product-superiority.png" class="product-superiority-img"
                                 alt="product superiority">
                         </div>
                         <div id="inner-div2">
@@ -621,23 +620,20 @@
 
     <!-- ======================= start vision section ========================= -->
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="section-head text-center">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-md-10 col-sm-12">
-                            <h2 class="playfont wow flipInX" data-wow-delay=".5s">VISION</h2>
-                            <p style="padding: 40px 0;" class="playfont wow flipInX" data-wow-delay=".5s">Our aspiration
-                                is to position ourselves as the foremost provider of real estate solutions within our
-                                market. We aim to deliver an unparalleled calibre of service and expertise to our
-                                esteemed clients and partners. We are committed to giving back to our customers who have
-                                trusted us with their hard-earned money by offering exceptional properties that enhance
-                                their lifestyle. Our pursuit of creating value extends to all stakeholders, including
-                                our valued clients, committed employees, and the vibrant community we are a part of. As
-                                a responsible organization, we wholeheartedly devote ourselves to nurturing enduring
-                                relationships built on the pillars of trust and mutual prosperity.</p>
+                <div class="col-lg-5">
+                    <div class="exp-img wow fadeInUp" data-wow-delay=".3s">
+                        <div class="img bg-img " data-background="img/about/vision.jpg">
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 valign">
+                    <div class="exp-content wow fadeInUp" data-wow-delay=".3s">
+                        <h2 class="mb-20 playfont">VISION</h2>
+                        <p>Our aspiration is to position ourselves as the foremost provider of real estate solutions within our market. We aim to deliver an unparalleled calibre of service and expertise to our esteemed clients and partners. We are committed to giving back to our customers who have trusted us with their hard-earned money by offering exceptional properties that enhance their lifestyle. Our pursuit of creating value extends to all stakeholders, including our valued clients, committed employees, and the vibrant community we are a part of. As a responsible organization, we wholeheartedly devote ourselves to nurturing enduring relationships built on the pillars of trust and mutual prosperity.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -648,22 +644,19 @@
 
     <!-- ======================= start mission section ========================= -->
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="section-head text-center">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-md-10 col-sm-12">
-                            <h2 class="playfont wow flipInX" data-wow-delay=".5s">MISSION</h2>
-                            <p style="padding: 40px 0;" class="playfont wow flipInX" data-wow-delay=".5s">At Sphere
-                                Housing, our goal is to deliver a real estate experience that is truly unmatched. We are
-                                committed to providing personalized solutions that meet the unique needs of each
-                                consumer. Our aspiration is to become the most unique and promising brand in real
-                                estate, delivering meaningful products to every customer who invests with us. Beyond
-                                being just another real estate organization, we strive to be a partner and advisor,
-                                offering expert guidance and incomparable service at every stage of the real estate
-                                process. We believe in giving back to the societies we serve and are devoted to using
-                                our resources and expertise to make a positive impact.</p>
+                <div class="col-lg-7 valign mb-20">
+                    <div class="exp-content wow fadeInUp" data-wow-delay=".3s">
+                        <h2 class="mb-20 playfont">MISSION</h2>
+                        <p>At Sphere Housing, our goal is to deliver a real estate experience that is truly unmatched. We are committed to providing personalized solutions that meet the unique needs of each consumer. Our aspiration is to become the most unique and promising brand in real estate, delivering meaningful products to every customer who invests with us. Beyond being just another real estate organization, we strive to be a partner and advisor, offering expert guidance and incomparable service at every stage of the real estate process. We believe in giving back to the societies we serve and are devoted to using our resources and expertise to make a positive impact.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="exp-img wow fadeInUp" data-wow-delay=".3s">
+                        <div class="img bg-img " data-background="img/about/mission.jpg">
                         </div>
                     </div>
                 </div>
@@ -676,22 +669,20 @@
 
     <!-- ======================= start purpose section ========================= -->
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="section-head text-center">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-md-10 col-sm-12">
-                            <h2 class="playfont wow flipInX" data-wow-delay=".5s">PURPOSE</h2>
-                            <p style="padding: 40px 0;" class="playfont wow flipInX" data-wow-delay=".5s">At Sphere
-                                Housing, we are driven by our commitment to providing high-quality real estate services
-                                that serve society with good quality projects at very competitive prices. We strive to
-                                be the premier choice and delight our customers at every step. Whether our clients are
-                                buying or selling a property, we are dedicated to building long-term relationships and
-                                helping them achieve their real estate goals. We are also committed to offering the best
-                                career growth, remuneration, and benefits to employees and creating long-lasting
-                                relationships with every stakeholder associated with us.</p>
+                <div class="col-lg-5">
+                    <div class="exp-img wow fadeInUp" data-wow-delay=".3s">
+                        <div class="img bg-img " data-background="img/about/purpose.jpg">
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 valign">
+                    <div class="exp-content wow fadeInUp" data-wow-delay=".3s">
+                        <h2 class="mb-20 playfont">PURPOSE</h2>
+                        <p>At Sphere Housing, we are driven by our commitment to providing high-quality real estate services that serve society with good quality projects at very competitive prices. We strive to be the premier choice and delight our customers at every step. Whether our clients are buying or selling a property, we are dedicated to building long-term relationships and helping them achieve their real estate goals. We are also committed to offering the best career growth, remuneration, and benefits to employees and creating long-lasting relationships with every stakeholder associated with us.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -703,7 +694,7 @@
 
     <!-- start customer centric section -->
 
-    <section>
+    <!-- <section>
         <div class="background-section">
             <div class="background-image" style="background-image: url('img/buildings-background.jpg');"></div>
             <div class="background-overlay"></div>
@@ -836,14 +827,14 @@
             </div>
         </div>
 
-    </section>
-
+    </section> -->
+    
     <!-- end customer centric section -->
 
 
 
     <!-- ==================== Start Section ==================== -->
-    <section>
+    <!-- <section>
         <div class="container">
             <div class="section-head text-center">
                 <div class="row justify-content-center">
@@ -891,7 +882,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
     <!-- ==================== End Section ==================== -->
 
     <!-- ==================== End about ==================== -->
