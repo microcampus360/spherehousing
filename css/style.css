@@ -135,7 +135,9 @@ a, span {
   font-weight: 400; }
 
 .playfont {
-  font-family: 'Playfair Display', serif; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  color : black;
 }
 
 .main-color {
@@ -1298,7 +1300,7 @@ header {
 }
 
 .top-bar {
-  background-color: #004b8d;
+  background-color: #252531;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3574,6 +3576,12 @@ button:hover {
 
 /* ====================== [ End contact ] ====================== */
 /* ====================== [ Start Footer ] ====================== */
+
+.logo-footer{
+    
+  width : 50%;
+  height:50%;
+}
 .main-footer {
   padding: 100px 0 0;
   background-color: #252531;
